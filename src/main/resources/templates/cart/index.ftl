@@ -3,18 +3,18 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">My Cart</h1>
+    <h1 align="center" class="display-4 mb-5">Моя корзина</h1>
 
 <#--Cart Detail Table-->
     <table class="table table-striped text-center">
         <thead>
         <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Subtotal</th>
-            <th scope="col">Action</th>
+            <th scope="col">Фото</th>
+            <th scope="col">Название</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Количество</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Действие</th>
 
         </tr>
         </thead>
@@ -25,7 +25,7 @@
                 <img height="100px" src="${item.getProductInfo().getProductIcon()}">
             </th>
             <td class="align-middle">${item.getProductInfo().getProductName()}</td>
-            <td class="align-middle">${item.getProductInfo().getProductPrice()?string.currency}</td>
+            <td class="align-middle">${item.getProductInfo().getProductPrice()?string.сом}</td>
             <td class="align-middle">
                 <a href="/cart/change?product_id=${item.getProductInfo().getProductId()}&quantity=${item.getQuantity()-1}"><i
                         class="fas fa-minus"></i></a>
@@ -35,9 +35,9 @@
                 <a href="/cart/change?product_id=${item.getProductInfo().getProductId()}&quantity=${item.getQuantity()+1}">
                     <i class="fas fa-plus"></i></a>
             </td>
-            <td class="align-middle">${(item.getProductInfo().getProductPrice() * item.getQuantity())?string.currency}</td>
+            <td class="align-middle">${(item.getProductInfo().getProductPrice() * item.getQuantity())?string.сом}</td>
             <td class="align-middle">
-                <a href="/cart/remove?product_id=${item.getProductInfo().getProductId()}">Remove</a>
+                <a href="/cart/remove?product_id=${item.getProductInfo().getProductId()}">Удалить</a>
             </td>
 
         </tr>
@@ -48,15 +48,15 @@
 <#--Check Out -->
     <#if items?has_content >
         <div>
-            <h5 style="display: inline;">Total: ${total?string.currency}</h5>
+            <h5 style="display: inline;">Итог: ${total?string.сом}</h5>
             <form action ="/cart/checkout" method="post">
-                <button type="submit" class="btn btn-warning float-right">Checkout</button>
+                <button type="submit" class="btn btn-warning float-right">Заказать</button>
             </form>
         </div>
     <#else>
     <#--Empty Cart-->
         <div>
-            <h4 class="text-muted text-center">Cart is empty. Go to get something! :)</h4>
+            <h4 class="text-muted text-center">Корзина пустая</h4>
         </div>
     </#if>
 

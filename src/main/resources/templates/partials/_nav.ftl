@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="/">
-        <img src="/images/brand.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        E-Shop
+        <img src="/images/logo_main.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="/images/logo_text.png" width="30" height="30" class="d-inline-block align-top" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

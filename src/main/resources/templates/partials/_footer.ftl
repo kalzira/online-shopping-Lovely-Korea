@@ -9,8 +9,8 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
-        © 2018 Copyright:
-        <a href="https://zlin.me"> zlin.me </a>
+        © 2019 Copyright:
+        <a href="https://zlin.me">lovelykorea</a>
     </div>
     <!--/.Copyright-->
 </div>

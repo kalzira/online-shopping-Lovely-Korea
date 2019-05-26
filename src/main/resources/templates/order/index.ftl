@@ -3,20 +3,20 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Orders</h1>
+    <h1 align="center" class="display-4 mb-5">Заказы</h1>
 
     <table class="table table-striped text-center">
         <thead>
         <tr>
-            <th scope="col">Order #</th>
-            <th scope="col">Customer Name</th>
-            <th scope="col">Customer Email</th>
-            <th scope="col">Customer phone</th>
-            <th scope="col">Shipping Address</th>
-            <th scope="col">Total</th>
-            <th scope="col">Order Data</th>
-            <th scope="col">Status</th>
-            <th scope="col">Action</th>
+            <th scope="col">Заказ #</th>
+            <th scope="col">Имя клиента</th>
+            <th scope="col">Email клиента</th>
+            <th scope="col">Телефонный номер клиента</th>
+            <th scope="col">Адресс доставки</th>
+            <th scope="col">Сумма</th>
+            <th scope="col">Дата заказа</th>
+            <th scope="col">Статус</th>
+            <th scope="col">Действие</th>
         </tr>
         </thead>
         <tbody>
@@ -29,23 +29,23 @@
             <td class="align-middle">${order.getBuyerEmail()}</td>
             <td class="align-middle">${order.getBuyerPhone()}</td>
             <td class="align-middle">${order.getBuyerAddress()}</td>
-            <td class="align-middle">${order.getOrderAmount()?string.currency}</td>
+            <td class="align-middle">${order.getOrderAmount()?string.сом}</td>
             <td class="align-middle">${order.getCreateTime()}</td>
             <td class="align-middle">${statusArray[order.getOrderStatus()]}</td>
             <td class="align-middle">
                 <#--New Order has actions-->
                     <#if !(currentUser.role == "ROLE_CUSTOMER" && currentUser.email != order.getBuyerEmail())>
                         <a style="display: block" href="/order/show/${order.getOrderId()}">
-                            Show</a>
+                            Показать</a>
                         <#if order.getOrderStatus() == 0>
                             <a style="display: block" href="/order/cancel/${order.getOrderId()}">
-                                Cancel</a>
+                                Отменить</a>
                         </#if>
                     </#if>
 
                     <#if currentUser.role != "ROLE_CUSTOMER" && order.getOrderStatus() == 0>
                         <a style="display: block" href="/order/finish/${order.getOrderId()}">
-                            Finish</a>
+                            Завершить</a>
                     </#if>
 
 
@@ -61,11 +61,11 @@
         <ul class="pagination justify-content-end">
                     <#if currentPage lte 1>
                            <li class="page-item disabled">
-                               <a class="page-link" href="#">Previous</a>
+                               <a class="page-link" href="#">Назад</a>
                            </li>
                     <#else>
                            <li class="page-item">
-                               <a class="page-link" href="?page=${currentPage - 1}&size=${size}">Previous</a>
+                               <a class="page-link" href="?page=${currentPage - 1}&size=${size}">Назад</a>
                            </li>
                     </#if>
 
@@ -84,11 +84,11 @@
 
                     <#if currentPage gte orders.getTotalPages()>
                             <li class="page-item disabled">
-                                <a class="page-link" href="#">Next</a>
+                                <a class="page-link" href="#">Вперед</a>
                             </li>
                     <#else>
                             <li class="page-item">
-                                <a class="page-link" href="?page=${currentPage + 1}&size=${size}">Next</a>
+                                <a class="page-link" href="?page=${currentPage + 1}&size=${size}">Вперед</a>
                             </li>
                     </#if>
         </ul>

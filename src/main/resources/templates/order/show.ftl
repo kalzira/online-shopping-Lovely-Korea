@@ -3,18 +3,18 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Order Detail</h1>
+    <h1 align="center" class="display-4 mb-5">Детали заказа</h1>
 
 <#--Cart Detail Table-->
     <table class="table table-striped text-center">
         <thead>
         <tr>
-            <th scope="col">Photo</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Price</th>
-            <th scope="col">Quantity</th>
-            <th scope="col">Subtotal</th>
+            <th scope="col">Фото</th>
+            <th scope="col">Название</th>
+            <th scope="col">Описание</th>
+            <th scope="col">Цена</th>
+            <th scope="col">Количество</th>
+            <th scope="col">Сумма</th>
 
         </tr>
         </thead>
@@ -26,9 +26,9 @@
             </th>
             <td class="align-middle">${item.getProductName()}</td>
             <td class="align-middle">${item.getProductDescription()}</td>
-            <td class="align-middle">${item.getProductPrice()?string.currency}</td>
+            <td class="align-middle">${item.getProductPrice()?string.сом}</td>
             <td class="align-middle">${item.getProductQuantity()}</td>
-            <td class="align-middle">${(item.getProductPrice() * item.getProductQuantity())?string.currency}</td>
+            <td class="align-middle">${(item.getProductPrice() * item.getProductQuantity())?string.сом}</td>
         </tr>
         </#list>
         </tbody>
