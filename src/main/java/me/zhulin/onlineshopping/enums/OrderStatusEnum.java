@@ -1,12 +1,12 @@
 package me.zhulin.onlineshopping.enums;
 
 /**
- * Created By Zhu Lin on 3/14/2018.
+
  */
 public enum OrderStatusEnum implements CodeEnum {
-    NEW(0, "New OrderMain"),
-    FINISHED(1, "Finished"),
-    CANCELED(2, "Canceled")
+    NEW(0, "Новый заказ"),
+    FINISHED(1, "Завершен"),
+    CANCELED(2, "Отменен")
     ;
 
     private  int code;

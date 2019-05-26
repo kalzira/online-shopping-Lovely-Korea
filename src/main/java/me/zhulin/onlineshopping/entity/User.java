@@ -14,7 +14,7 @@ import java.io.Serializable;
 import java.util.Collection;
 
 /**
- * Created By Zhu Lin on 3/12/2018.
+
  */
 @Entity
 @Data
@@ -30,7 +30,7 @@ public class User  implements Serializable {
     @NotEmpty
     private String email;
     @NotEmpty
-    @Size(min=3, message = "Length must be more than 3")
+    @Size(min=3, message = "Пароль должен составлять более 3 символов")
     private String password;
     @NotEmpty
     private String name;

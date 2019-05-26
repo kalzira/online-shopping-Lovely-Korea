@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created By Zhu Lin on 3/9/2018.
+ *
  */
 @Repository
 public interface ProductCategoryRepository extends JpaRepository<ProductCategory, Integer> {

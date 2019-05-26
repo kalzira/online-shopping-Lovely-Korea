@@ -3,12 +3,12 @@ package me.zhulin.onlineshopping.enums;
 import lombok.Getter;
 
 /**
- * Created By Zhu Lin on 3/9/2018.
+
  */
 @Getter
 public enum ProductStatusEnum implements CodeEnum{
-    UP(0, "Available"),
-    DOWN(1, "Unavailable")
+    UP(0, "В наличии"),
+    DOWN(1, "Нет в наличии")
     ;
     private Integer code;
     private String message;

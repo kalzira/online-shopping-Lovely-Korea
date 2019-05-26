@@ -13,7 +13,7 @@ import java.math.BigDecimal;
 import java.util.Objects;
 
 /**
- * Created By Zhu Lin on 3/14/2018.
+
  */
 @Entity
 @Data
@@ -30,22 +30,22 @@ public class ProductInOrder {
     @NotEmpty
     private String productId;
 
-    /** 名字. */
+
     @NotEmpty
     private String productName;
 
-    /** 描述. */
+
     @NotNull
     private String productDescription;
 
-    /** 小图. */
+
     private String productIcon;
 
-    /** 类目编号. */
+
     @NotNull
     private Integer categoryType;
 
-    /** 单价. */
+
     @NotNull
     private BigDecimal productPrice;
 

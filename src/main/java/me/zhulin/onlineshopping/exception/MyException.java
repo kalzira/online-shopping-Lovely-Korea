@@ -3,7 +3,7 @@ package me.zhulin.onlineshopping.exception;
 import me.zhulin.onlineshopping.enums.ResultEnum;
 
 /**
- * Created By Zhu Lin on 3/10/2018.
+ *
  */
 public class MyException extends RuntimeException{
 

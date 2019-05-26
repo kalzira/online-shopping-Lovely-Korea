@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created By Zhu Lin on 3/10/2018.
+ *
  */
 @Repository
 public interface ProductInfoRepository extends JpaRepository<ProductInfo, String>{
