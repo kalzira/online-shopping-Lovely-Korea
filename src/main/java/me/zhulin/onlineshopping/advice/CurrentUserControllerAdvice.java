@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
 /**
- * Created By Zhu Lin on 3/13/2018.
+
  */
 @ControllerAdvice
 @DependsOn("passwordEncoder")

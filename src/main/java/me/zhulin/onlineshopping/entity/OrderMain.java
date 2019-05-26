@@ -18,8 +18,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * OrderMain contains User info and products in the order
- * Created By Zhu Lin on 3/14/2018.
+
  */
 @Entity
 @Data
@@ -53,7 +52,7 @@ public class OrderMain implements Serializable{
     @NotNull
     private BigDecimal orderAmount;
 
-    /** 订单状态, 默认为0新下单. */
+
     @NotNull
     @ColumnDefault("0")
     private Integer orderStatus;

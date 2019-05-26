@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 /**
- * Created By Zhu Lin on 3/12/2018.
+
  */
 @Controller
 public class MyErrorController implements ErrorController{

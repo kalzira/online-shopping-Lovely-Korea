@@ -18,7 +18,7 @@ import javax.validation.Valid;
 import java.util.Map;
 
 /**
- * Created By Zhu Lin on 3/10/2018.
+
  */
 @Controller
 
@@ -50,7 +50,7 @@ public class ProductController {
 
         // Product is not available
         if (productInfo.getProductStatus() == ProductStatusEnum.DOWN.getCode()) {
-            model.addAttribute("msg", "Product is unavailable!");
+            model.addAttribute("msg", "Товар не в наличии!");
             model.addAttribute("url", "/");
             return  "common/error";
         }
@@ -69,8 +69,10 @@ public class ProductController {
         PageRequest request = PageRequest.of(page - 1, size);
         Page<ProductInfo> products = productService.findAll(request);
         map.put("products", products);
-        map.put("statusArray", new String[] {"Available","Unavailable"});
-        map.put("categoryArray", new String[] {"Books","Food","Clothes", "Drink"});
+        map.put("statusArray", new String[] {"В наличии","Нет в наличии"});
+        map.put("categoryArray", new String[] {"Снятие макияжа","Очищение","Пиллинги, Скрабы", "Тонеры, Эмульсии, Сыворотки"
+                ,"Маски для лица","Крем для лица","BB, CC крема","Пудры","Глаза","Губы","Продукты питания","Уход за волосами",
+        "Хиты продаж!","Новинки","Товары для дома","Гаджеты"});
         map.put("currentPage", page);
         map.put("size", size);
         return new ModelAndView("/product/sellerIndex", map);
@@ -87,11 +89,11 @@ public class ProductController {
         if (productIdExists != null) {
             bindingResult
                     .rejectValue("productId", "error.product",
-                            "There is already a product with the code provided");
+                            "Товар с таким же кодом уже существует");
         }
-        // 使用BindingResult来验证表单数据的正确性
+
         if (bindingResult.hasErrors()) {
-            // 将提交的表单内容原封不动的返回到页面再展示出来
+
             redirectAttributes.addFlashAttribute("product", product);
             return "product/sellerCreate";
         }
@@ -126,9 +128,9 @@ public class ProductController {
                        RedirectAttributes redirectAttributes,
                        BindingResult bindingResult, Model model){
 
-        // 使用BindingResult来验证表单数据的正确性
+
         if (bindingResult.hasErrors()) {
-            // 将提交的表单内容原封不动的返回到页面再展示出来
+
             redirectAttributes.addFlashAttribute("product", product);
             return "/seller/product/"+ productId + "/edit";
 

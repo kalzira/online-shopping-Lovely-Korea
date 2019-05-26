@@ -32,7 +32,7 @@ import java.security.Principal;
 import java.util.Iterator;
 
 /**
- * Created By Zhu Lin on 3/12/2018.
+
  */
 @Controller
 public class UserController {
@@ -69,12 +69,12 @@ public class UserController {
         if (userWithEnteredEmailExists != null) {
             bindingResult
                     .rejectValue("email", "error.user",
-                            "There is already a user registered with the email provided");
+                            "Пользователь с таким email уже существует");
         }
 
-        // 使用BindingResult来验证表单数据的正确性
+
         if (bindingResult.hasErrors()) {
-            // 将提交的表单内容原封不动的返回到页面再展示出来
+
             redirectAttributes.addFlashAttribute("user", user);
             return "register";
         }
@@ -89,9 +89,9 @@ public class UserController {
 
     @PostMapping("/profiles")
     public String editUser(@Valid @ModelAttribute("user") User user, BindingResult bindingResult, RedirectAttributes redirectAttributes, Principal principal, Model model) {
-        // 使用BindingResult来验证表单数据的正确性
+
         if (bindingResult.hasErrors()) {
-            // 将提交的表单内容原封不动的返回到页面再展示出来
+
             redirectAttributes.addFlashAttribute("user", user);
             return "/user/show";
         }
@@ -100,19 +100,19 @@ public class UserController {
             return "redirect:" + "/403";
         }
         userService.update(user);
-        model.addAttribute("msg", "Profils is updated!");
+        model.addAttribute("msg", "Профиль обновлен!");
         model.addAttribute("url", "/profiles");
         return "common/success";
     }
 
     @GetMapping("/403")
     public String accessDeney(Model model) {
-        model.addAttribute("msg", "Access denied!");
+        model.addAttribute("msg", "Доступ запрещен!");
         return "/common/error";
     }
     @GetMapping("/404")
     public String notFound(Model model) {
-        model.addAttribute("msg", "Page not found!");
+        model.addAttribute("msg", "Страница не найдена!");
         return "/common/error";
     }
 

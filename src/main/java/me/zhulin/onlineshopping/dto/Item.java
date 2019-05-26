@@ -4,7 +4,7 @@ import lombok.Data;
 import me.zhulin.onlineshopping.entity.ProductInfo;
 
 /**
- * Created By Zhu Lin on 3/11/2018.
+
  */
 @Data
 public class Item {
