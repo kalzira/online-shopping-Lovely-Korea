@@ -7,18 +7,18 @@
     <div style="width:40%; margin: 25px auto" >
         <#if (RequestParameters.error)??>
             <div class="alert alert-danger">
-                Invalid username and password.
+                Неправильно введен пароль или имя.
             </div>
         </#if>
         <#if (RequestParameters.logout)??>
         <div class="alert alert-info">
-            You have been logged out.
+            Вы вышли из аккаунта.
         </div>
         </#if>
 
         <form action="/login" method="post">
             <div class="form-group">
-                <label>Email address</label>
+                <label>Email</label>
                 <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email" required="true" autofocus="true">
             </div>
 

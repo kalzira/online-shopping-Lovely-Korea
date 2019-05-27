@@ -53,4 +53,10 @@ public class CategoryController {
         map.put("size", size);
         return new ModelAndView("/category/show", map);
     }
+    @GetMapping("/delivery")
+    public String showForm() {
+        return "delivery";
+    }
+
+
 }

@@ -4,18 +4,18 @@
 <body>
 <div class="container ">
     <#include "partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Sign Up</h1>
+    <h1 align="center" class="display-4 mb-5">Регистрация</h1>
     <div style="width:40%; margin: 25px auto" >
         <form action="/register"  method="post">
             <@spring.bind "user"/>
             <div class="form-group">
-                <label>Email address</label>
+                <label>Email </label>
                  <@spring.bind "user.email"/>
                 <input value="${user.email!}" type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email" required="true" autofocus="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <div class="form-group">
-                <label>Name</label>
+                <label>Имя</label>
                  <@spring.bind "user.name"/>
                 <input value="${user.name!}"type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your name" required="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
