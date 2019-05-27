@@ -4,14 +4,14 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Edit Product</h1>
+    <h1 align="center" class="display-4 mb-5">Редактировать Товар</h1>
 <#--<div class="text-center justify-content-center">-->
     <div style="width:40%; margin: 25px auto">
         <form action="/seller/product/new" method="post">
             <@spring.bind "product"/>
         <#--Id-->
             <div class="form-group">
-                <label>Code</label>
+                <label>Код</label>
                  <@spring.bind "product.productId"/>
                 <input  value="${product.productId!}" placeholder="Required" type="text" class="form-control form-control-lg"
                        id="productId" name="productId" required="true">
@@ -19,7 +19,7 @@
             </div>
         <#--Photo-->
             <div class="form-group">
-                <label>Photo Link</label>
+                <label>Ссылка на изображение</label>
                 <@spring.bind "product.productIcon"/>
                 <input value="${product.productIcon!}" placeholder="Optional" type="text" class="form-control form-control-lg" id="productIcon"
                        name="productIcon">
@@ -28,7 +28,7 @@
 
         <#--Name-->
             <div class="form-group">
-                <label>Name</label>
+                <label>Название</label>
                  <@spring.bind "product.productName"/>
                 <input value="${product.productName!}"  placeholder="Required" type="text" class="form-control form-control-lg" id="productName"
                        name="productName" required="true">
@@ -37,19 +37,33 @@
 
         <#--Category-->
             <div class="form-group">
-                <label>Category</label>
+                <label>Категория</label>
                 <select class="custom-select custom-select-lg " id="categoryType" name="categoryType"
                         required="true">
-                    <option value="0">Books</option>
-                    <option value="1">Food</option>
-                    <option value="2">Clothes</option>
-                    <option value="3">Drink</option>
+                    <option value="0">Снятие макияжа</option>
+                    <option value="1">Очищение</option>
+                    <option value="2">Пиллинги, Скрабы</option>
+                    <option value="3">Тонеры, Эмульсии, Сыворотки</option>
+                    <option value="4">Маски для лица</option>
+                    <option value="5">Крем для лица</option>
+                    <option value="6">BB, CC крема</option>
+                    <option value="7">Пудры</option>
+                    <option value="8">Глаза</option>
+                    <option value="9">Губы</option>
+                    <option value="10">Продукты питания</option>
+                    <option value="11">Уход за волосами</option>
+                    <option value="12">Хиты продаж!</option>
+                    <option value="13">Новинки</option>
+                    <option value="14">Товары для дома</option>
+                    <option value="15">Гаджеты</option>
+                    
+
                 </select>
             </div>
 
         <#--Description-->
             <div class="form-group">
-                <label>Description</label>
+                <label>Описание</label>
                 <@spring.bind "product.productDescription"/>
                 <textarea class="form-control form-control-lg text-left"
                           id="productDescription" name="productDescription"
@@ -58,7 +72,7 @@
             </div>
         <#--Price-->
             <div class="form-group">
-                <label>Price</label>
+                <label>Цена</label>
                 <@spring.bind "product.productPrice"/>
                 <input class="form-control form-control-lg"
                        type="number"
@@ -71,7 +85,7 @@
             </div>
         <#--Stock-->
             <div class="form-group">
-                <label>Stock</label>
+                <label>Количество</label>
                 <@spring.bind "product.productStock"/>
                 <input class="form-control form-control-lg"
                        type="number"
@@ -79,15 +93,15 @@
                        name="productStock"
                        min="0"
                        value="${product.productStock!'50'}"
-                       required="true">
+                       required="false">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
         <#--Status-->
             <div class="form-group">
-                <label>Status</label>
+                <label>Статус</label>
                 <select class="custom-select custom-select-lg " id="productStatus" name="productStatus" required="true">
-                    <option value="0">Available</option>
-                    <option value="1">Unavailable</option>
+                    <option value="0">В наличии</option>
+                    <option value="1">Нет в наличии</option>
                 </select>
             </div>
             <div class="form-group">

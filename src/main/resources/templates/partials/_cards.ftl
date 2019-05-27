@@ -1,4 +1,4 @@
-    <div class="row card-deck text-center">
+<div class="row card-deck text-center">
         <#list products.content as productInfo>
             <div class="col-lg-4 ">
                 <div class="card mb-4 ">

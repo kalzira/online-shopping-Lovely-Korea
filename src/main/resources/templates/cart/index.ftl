@@ -1,4 +1,5 @@
 <html xmlns="http://www.w3.org/1999/html">
+
 <#include "../partials/_header.ftl">
 <body>
 <div class="container ">
@@ -75,4 +76,5 @@
         timeout = setTimeout(function(){location.href = theUrl} , 1000);
     }
 </script>
+
 </html>

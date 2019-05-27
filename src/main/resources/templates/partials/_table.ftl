@@ -2,15 +2,15 @@
     <thead>
     <tr>
 
-        <th scope="col">Photo</th>
-        <th scope="col">Code</th>
-        <th scope="col">Name</th>
-        <th scope="col">Type</th>
-        <th scope="col">Description</th>
-        <th scope="col">Price</th>
-        <th scope="col">Stock</th>
-        <th scope="col">Status</th>
-        <th scope="col">Action</th>
+        <th scope="col">Фото</th>
+        <th scope="col">Код</th>
+        <th scope="col">Название</th>
+        <th scope="col">Категория</th>
+        <th scope="col">Описание</th>
+        <th scope="col">Цена</th>
+        <th scope="col">Количество</th>
+        <th scope="col">Статус</th>
+        <th scope="col">Действие</th>
 
     </tr>
     </thead>
@@ -24,15 +24,15 @@
             <td class="align-middle">${productInfo.getProductName()}</td>
             <td class="align-middle">${categoryArray[productInfo.getCategoryType()]}</td>
             <td class="align-middle">${productInfo.getProductDescription()}</td>
-            <td class="align-middle">${productInfo.getProductPrice()?string.currency}</td>
+            <td class="align-middle">${productInfo.getProductPrice()?string.сом}</td>
             <td class="align-middle">${productInfo.getProductStock()}</td>
             <td class="align-middle">${statusArray[productInfo.getProductStatus()]}</td>
             <td class="align-middle">
                 <a style="display: block" href="/seller/product/${productInfo.getProductId()}/edit">
-                    Edit</a>
+                    Редактрировать</a>
                 <#if currentUser.role=="ROLE_MANAGER">
                     <a style="display: block" href="/seller/product/${productInfo.getProductId()}/delete">
-                        Remove</a>
+                        Удалить</a>
                 </#if>
 
             </td>
