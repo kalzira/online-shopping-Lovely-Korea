@@ -3,7 +3,7 @@
 <body>
 <div class="container  ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Product Detail</h1>
+    <h1 align="center" class="display-4 mb-5">Детали товара</h1>
     <div class="row text-center justify-content-center">
         <div class="col-lg-6 ">
             <div class="card mb-4 ">
@@ -16,14 +16,14 @@
                             <p class="card-test"><strong>Description: </strong>${productInfo.getProductDescription()}
                             </p>
                             <p class="card-text">
-                                <strong>Price: </strong>
+                                <strong>Цена: </strong>
                                 <label id="price"
-                                       value="${productInfo.getProductPrice()}">${productInfo.getProductPrice()?string.currency}</label>
+                                       value="${productInfo.getProductPrice()}">${productInfo.getProductPrice()?string.сом}</label>
                             </p>
                             <p class="card-text"><strong>Stock: </strong>${productInfo.getProductStock()}</p>
 
                             <label class="card-text" for="quantity">
-                                <strong>Quantity: </strong>
+                                <strong>Количество: </strong>
                             </label>
                             <input type="number"
                                    id="quantity"
@@ -32,14 +32,14 @@
                                    min="1"
                                    max="${productInfo.getProductStock()}"
                                    oninput="chageSubtotal()">
-                            <p class="card-text"><strong>Subtotal: </strong>
+                            <p class="card-text"><strong>Сумма: </strong>
                             <#--For JavaScript inHTML-->
                                 <label id="subtotal">${(productInfo.getProductPrice())?string.currency}</label>
                             </p>
                         </div>
                         <button type="submit"
                                 class="btn btn-primary btn-lg <#if productInfo.getProductStatus()==1>disabled</#if>">
-                            Add to Cart
+                            Добавить в корзину
                         </button>
                     </form>
 

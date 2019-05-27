@@ -4,7 +4,7 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Редактировать Товар</h1>
+    <h1 align="center" class="display-4 mb-5">Добавить Товар</h1>
 <#--<div class="text-center justify-content-center">-->
     <div style="width:40%; margin: 25px auto">
         <form action="/seller/product/new" method="post">

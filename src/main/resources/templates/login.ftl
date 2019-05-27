@@ -3,7 +3,7 @@
 <body>
 <div class="container ">
     <#include "partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Sign In</h1>
+    <h1 align="center" class="display-4 mb-5">Войти</h1>
     <div style="width:40%; margin: 25px auto" >
         <#if (RequestParameters.error)??>
             <div class="alert alert-danger">
