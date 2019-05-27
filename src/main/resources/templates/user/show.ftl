@@ -5,38 +5,38 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Edit Profiles</h1>
+    <h1 align="center" class="display-4 mb-5">Редактировать профиль</h1>
     <div style="width:40%; margin: 25px auto" >
         <form action="/profiles"  method="post">
             <@spring.bind "user"/>
             <div class="form-group">
-                <label>Email address</label>
+                <label>Email</label>
                  <@spring.bind "user.email"/>
-                <input readonly value="${currentUser.email!}" type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email" required="true" >
+                <input readonly value="${currentUser.email!}" type="email" class="form-control form-control-lg" id="email" name="email" placeholder="Введите email" required="true" >
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <div class="form-group">
-                <label>Name</label>
+                <label>Имя</label>
                  <@spring.bind "user.name"/>
-                <input value="${currentUser.name!}"type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Your name" required="true" autofocus="true">
+                <input value="${currentUser.name!}"type="text" class="form-control form-control-lg" id="name" name="name" placeholder="Имя" required="true" autofocus="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <div class="form-group">
-                <label>Password</label>
+                <label>Пароль</label>
                 <@spring.bind "user.password"/>
-                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required="true">
+                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Введите пароль" required="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <div class="form-group">
-                <label>Phone</label>
+                <label>Телефонный номер</label>
                 <@spring.bind "user.phone"/>
-                <input value="${currentUser.phone!}" type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="Phone" required="true">
+                <input value="${currentUser.phone!}" type="text" class="form-control form-control-lg" id="phone" name="phone" placeholder="" required="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <div class="form-group">
-                <label>Address</label>
+                <label>Адресс доставки</label>
                 <@spring.bind "user.address"/>
-                <input value="${currentUser.address!}" type="text" class="form-control form-control-lg" id="address" name="address" placeholder="Address" required="true">
+                <input value="${currentUser.address!}" type="text" class="form-control form-control-lg" id="address" name="address" placeholder="" required="true">
                 <span class="text-danger"><@spring.showErrors ""/></span>
             </div>
             <@spring.bind "user.role"/>

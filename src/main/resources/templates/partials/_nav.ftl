@@ -199,46 +199,119 @@
         <ul class="menu_top_nav">
             <li class="menu_item has-children">
                 <a href="#">
-                    usd
+                   Каталог
                     <i class="fa fa-angle-down"></i>
                 </a>
                 <ul class="menu_selection">
-                    <li><a href="#">cad</a></li>
-                    <li><a href="#">aud</a></li>
-                    <li><a href="#">eur</a></li>
-                    <li><a href="#">gbp</a></li>
-                </ul>
-            </li>
-            <li class="menu_item has-children">
-                <a href="#">
-                    English
-                    <i class="fa fa-angle-down"></i>
-                </a>
-                <ul class="menu_selection">
-                    <li><a href="#">French</a></li>
-                    <li><a href="#">Italian</a></li>
-                    <li><a href="#">German</a></li>
-                    <li><a href="#">Spanish</a></li>
-                </ul>
-            </li>
-            <li class="menu_item has-children">
-                <a href="#">
-                    My Account
-                    <i class="fa fa-angle-down"></i>
-                </a>
-                <ul class="menu_selection">
-                    <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-                    <li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
-                </ul>
-            </li>
-            <li class="menu_item">
-                <a href="#">home</a>
-            </li>
-            <li class="menu_item"><a href="#">shop</a></li>
-            <li class="menu_item"><a href="#">promotion</a></li>
-            <li class="menu_item"><a href="#">pages</a></li>
-            <li class="menu_item"><a href="#">blog</a></li>
-            <li class="menu_item"><a href="#">contact</a></li>
+                    <li>
+                        <a class="<#if category?? && category.categoryType == 0>active</#if>"
+                           href="/category/0">
+                            Снятие макияжа
+                        </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 1>active</#if>"
+                       href="/category/1">
+                        Очищение
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 2>active</#if>"
+                       href="/category/2">
+                        Пиллинги, Скрабы
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 3>active</#if>"
+                       href="/category/3">
+                        Тонеры, Эмульсии, Сыворотки
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 4>active</#if>"
+                       href="/category/4">
+                        Маски для лица
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 5>active</#if>"
+                       href="/category/5">
+                        Крем для лица
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 6>active</#if>"
+                       href="/category/6">
+                        BB, CC крема
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 7>active</#if>"
+                       href="/category/7">
+                        Пудры
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 8>active</#if>"
+                       href="/category/8">
+                        Глаза
+                    </a>
+                    </li>
+                    <li>
+                    <a class="<#if category?? && category.categoryType == 9>active</#if>"
+                       href="/category/9">
+                        Губы
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 10>active</#if>"
+                       href="/category/10">
+                        Продукты питания
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 11>active</#if>"
+                       href="/category/11">
+                        Уход за волосами
+                    </a>
+                    </li>
+                    <li>
+                    <a class=" <#if category?? && category.categoryType == 12>active</#if>"
+                       href="/category/12">
+                        Хиты продаж!
+                    </a>
+                    </li>
+                    <li>
+                    <a class="<#if category?? && category.categoryType == 13>active</#if>"
+                       href="/category/13">
+                        Новинки
+                    </a>
+                    </li>
+                    <li>
+                    <a class="<#if category?? && category.categoryType == 14>active</#if>"
+                       href="/category/14">
+                        Товары для дома
+                    </a>
+                    </li>
+                    <li>
+                    <a class="<#if category?? && category.categoryType == 15>active</#if>"
+                       href="/category/15">
+                        Гаджеты
+                    </a>
+                    </li>
+                    </ul>
+                    </li>
+                    <li class="menu_item has-children">
+                        <a href="#">
+                            Войти
+                            <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="menu_selection">
+                            <li><a href="/login"><i class="fa fa-sign-in" aria-hidden="true"></i>Войти</a></li>
+                            <li><a href="/register"><i class="fa fa-user-plus" aria-hidden="true"></i>Регистрация</a></li>
+                        </ul>
+                    </li>
+
         </ul>
     </div>
 </div>

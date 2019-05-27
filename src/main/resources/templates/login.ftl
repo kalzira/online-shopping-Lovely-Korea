@@ -19,19 +19,19 @@
         <form action="/login" method="post">
             <div class="form-group">
                 <label>Email</label>
-                <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Enter email" required="true" autofocus="true">
+                <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Введите email..." required="true" autofocus="true">
             </div>
 
             <div class="form-group">
-                <label>Password</label>
-                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Password" required="true">
+                <label>Пароль</label>
+                <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="Введите пароль..." required="true">
             </div>
 
             <div class="form-group">
                 <div>
                     <input type="checkbox" id="remember_me" name="remember-me">
-                    <label for="remember_me" class="inline">Remember me</label>
-                    <a class="float-right" href="/register">Sign Up</a>
+                    <label for="remember_me" class="inline">Запомнить меня</label>
+                    <a class="float-right" href="/register">Зарегистрироваться</a>
                 </div>
             </div>
 
@@ -43,20 +43,7 @@
 
 
         <#--Sample Testing-->
-            <strong>Sample Users</strong>
-            <table style="width: 100%;" id="sampleLoginTable">
-                <tr>
-                    <td><a
-                            onclick="fillLoginFields('customer1@email.com','123')"
-                            href="javascript:void(0)">customer1</a></td>
-                    <td><a
-                            onclick="fillLoginFields('employee1@email.com','123')"
-                            href="javascript:void(0)">employee1</a></td>
-                    <td><a
-                            onclick="fillLoginFields('manager1@email.com','123')"
-                            href="javascript:void(0)">manager1</a></td>
-                </tr>
-            </table>
+
 
     </div>
 
