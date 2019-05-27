@@ -14,7 +14,7 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 ">Товары</h1>
+    <h3 align="center">Товары</h3>
     <#if currentUser.role=="ROLE_MANAGER">
 
         <a style="color: inherit" href="/seller/product/new" class="float-right mb-3"><i class="fas fa-plus fa-2x">Добавить</i>

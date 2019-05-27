@@ -14,7 +14,7 @@
 <body>
 <div class="container ">
     <#include "../partials/_nav.ftl">
-    <h1 align="center" class="display-4 mb-5">Детали заказа</h1>
+    <h3 align="center">Детали заказа</h3>
 
 <#--Cart Detail Table-->
     <table class="table table-striped text-center">
@@ -37,9 +37,9 @@
             </th>
             <td class="align-middle">${item.getProductName()}</td>
             <td class="align-middle">${item.getProductDescription()}</td>
-            <td class="align-middle">${item.getProductPrice()?string.сом}</td>
+            <td class="align-middle">${item.getProductPrice()}сом</td>
             <td class="align-middle">${item.getProductQuantity()}</td>
-            <td class="align-middle">${(item.getProductPrice() * item.getProductQuantity())?string.сом}</td>
+            <td class="align-middle">${(item.getProductPrice() * item.getProductQuantity())}сом</td>
         </tr>
         </#list>
         </tbody>

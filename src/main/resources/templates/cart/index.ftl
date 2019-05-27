@@ -26,7 +26,7 @@
                 <img height="100px" src="${item.getProductInfo().getProductIcon()}">
             </th>
             <td class="align-middle">${item.getProductInfo().getProductName()}</td>
-            <td class="align-middle">${item.getProductInfo().getProductPrice()?string.сом}</td>
+            <td class="align-middle">${item.getProductInfo().getProductPrice()}сом</td>
             <td class="align-middle">
                 <a href="/cart/change?product_id=${item.getProductInfo().getProductId()}&quantity=${item.getQuantity()-1}"><i
                         class="fas fa-minus"></i></a>
@@ -36,7 +36,7 @@
                 <a href="/cart/change?product_id=${item.getProductInfo().getProductId()}&quantity=${item.getQuantity()+1}">
                     <i class="fas fa-plus"></i></a>
             </td>
-            <td class="align-middle">${(item.getProductInfo().getProductPrice() * item.getQuantity())?string.сом}</td>
+            <td class="align-middle">${(item.getProductInfo().getProductPrice() * item.getQuantity())}сом</td>
             <td class="align-middle">
                 <a href="/cart/remove?product_id=${item.getProductInfo().getProductId()}">Удалить</a>
             </td>
@@ -49,7 +49,7 @@
 <#--Check Out -->
     <#if items?has_content >
         <div>
-            <h5 style="display: inline;">Итог: ${total?string.сом}</h5>
+            <h5 style="display: inline;">Итог: ${total}<p>сом</p></h5>
             <form action ="/cart/checkout" method="post">
                 <button type="submit" class="btn btn-warning float-right">Заказать</button>
             </form>

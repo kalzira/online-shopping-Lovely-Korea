@@ -40,7 +40,7 @@
             <td class="align-middle">${order.getBuyerEmail()}</td>
             <td class="align-middle">${order.getBuyerPhone()}</td>
             <td class="align-middle">${order.getBuyerAddress()}</td>
-            <td class="align-middle">${order.getOrderAmount()?string.сом}</td>
+            <td class="align-middle">${order.getOrderAmount()}сом</td>
             <td class="align-middle">${order.getCreateTime()}</td>
             <td class="align-middle">${statusArray[order.getOrderStatus()]}</td>
             <td class="align-middle">

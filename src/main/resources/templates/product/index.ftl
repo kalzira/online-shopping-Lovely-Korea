@@ -17,7 +17,7 @@
     <#include "../partials/_nav.ftl">
     <!-- Slider -->
 
-    <div class="main_slider" style="background-image:url(img/slider.jpg); background-size: 30%; padding: 0">
+    <div class="main_slider" style="background-image:url(img/slider.jpg); background-size: 30%; padding: 0; position: absolute; top: 80px">
         <div class="container fill_height">
             <div class="row align-items-center fill_height">
                 <div class="col">

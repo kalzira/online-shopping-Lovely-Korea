@@ -37,7 +37,7 @@
             <td class="align-middle">${productInfo.getProductName()}</td>
             <td class="align-middle">${categoryArray[productInfo.getCategoryType()]}</td>
             <td class="align-middle">${productInfo.getProductDescription()}</td>
-            <td class="align-middle">${productInfo.getProductPrice()?string.сом}</td>
+            <td class="align-middle">${productInfo.getProductPrice()}сом</td>
             <td class="align-middle">${productInfo.getProductStock()}</td>
             <td class="align-middle">${statusArray[productInfo.getProductStatus()]}</td>
             <td class="align-middle">

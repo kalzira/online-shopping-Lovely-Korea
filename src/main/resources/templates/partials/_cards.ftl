@@ -10,7 +10,7 @@
                         <h4 class="card-title ">${productInfo.getProductName()}</h4>
                         <div class="text-left">
                             <p class="card-test"><strong>Описание: </strong>${productInfo.getProductDescription()}</p>
-                            <p class="card-text"><strong>Цена: </strong>${productInfo.getProductPrice()?string.сом}</p>
+                            <p class="card-text"><strong>Цена: </strong>${productInfo.getProductPrice()}сом</p>
                             <p class="card-text"><strong>Количество: </strong>${productInfo.getProductStock()}</p>
                         </div>
                         <a class="btn btn-primary btn-sm <#if productInfo.getProductStatus()==1>disabled</#if>"

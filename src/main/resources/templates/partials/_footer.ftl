@@ -11,7 +11,7 @@
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
         © 2019 Copyright:
-        <a href="https://zlin.me">lovelykorea</a>
+        <a href="#">lovelykorea</a>
     </div>
 
     <script src="/js/jquery-3.2.1.min.js"></script>

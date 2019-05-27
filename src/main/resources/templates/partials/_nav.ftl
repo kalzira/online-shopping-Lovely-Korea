@@ -166,7 +166,6 @@
                             </#if>
                             <#if currentUser?? >
                                 <li><a class="nav-item nav-link " href="/profiles"><i class="fa fa-user" aria-hidden="true"></i>
-                                        ${currentUser.name}
                                     </a></li>
                                 <li><a class="nav-item nav-link " href="/logout">
                                         Выйти

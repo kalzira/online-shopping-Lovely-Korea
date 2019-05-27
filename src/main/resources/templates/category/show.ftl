@@ -13,7 +13,7 @@
 <body>
 <div class="container">
     <#include "../partials/_nav.ftl">
-    <h4 align="center">${category.categoryName}</h4>
+    <h3 align="center">${category.categoryName}</h3>
 
     <#include "../partials/_cards.ftl">
     <#include "../partials/_pagination.ftl">

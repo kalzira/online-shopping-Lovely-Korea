@@ -18,7 +18,7 @@
     <div class="row text-center justify-content-center">
         <div class="col-lg-6 ">
             <div class="card mb-4 ">
-                <img height="60%" class="card-img-top" src="${productInfo.getProductIcon()}">
+                <img height="100px" class="card-img-top" src="${productInfo.getProductIcon()}">
                 <div class="card-body">
                     <h4 class="card-title ">${productInfo.getProductName()}</h4>
                     <form method="post" action="/cart">
@@ -29,7 +29,7 @@
                             <p class="card-text">
                                 <strong>Цена: </strong>
                                 <label id="price"
-                                       value="${productInfo.getProductPrice()}">${productInfo.getProductPrice()?string.сом}</label>
+                                       value="${productInfo.getProductPrice()}">${productInfo.getProductPrice()}сом</label>
                             </p>
                             <p class="card-text"><strong>Stock: </strong>${productInfo.getProductStock()}</p>
 
@@ -45,7 +45,7 @@
                                    oninput="chageSubtotal()">
                             <p class="card-text"><strong>Сумма: </strong>
                             <#--For JavaScript inHTML-->
-                                <label id="subtotal">${(productInfo.getProductPrice())?string.currency}</label>
+                                <label id="subtotal">${(productInfo.getProductPrice())}<p>сом</p></label>
                             </p>
                         </div>
                         <button type="submit"
