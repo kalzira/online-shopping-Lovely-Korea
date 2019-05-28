@@ -30,6 +30,8 @@ public interface ProductService {
 
     ProductInfo onSale(String productId);
 
+    List<ProductInfo> findALlByProductName(String productName);
+
     ProductInfo update(ProductInfo productInfo);
     ProductInfo save(ProductInfo productInfo);
 

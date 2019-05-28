@@ -52,8 +52,8 @@
         <div class="row">
             <div class="col-lg-12 col-sm-12 col-md-12 text-right">
                 <div class="logo_container">
-                    <img src="/img/logo_main.png" width="60" height="60" class="d-inline-block align-top" alt="">
-                    <img src="/img/logo_text.png" width="60" height="60" class="d-inline-block align-top" alt="">
+                    <img src="/img/logo_main.png" width="60" height="60" class="d-inline-block align-top" href="/">
+                    <img src="/img/logo_text.png" width="60" height="60" class="d-inline-block align-top" href="/">
                 </div>
                 <nav class="navbar">
                     <ul class="navbar_menu">
@@ -148,7 +148,7 @@
                             <li><a class="nav-item nav-link <#if category?? && category.categoryType == 13>active</#if>"
                                    href="/category/13">Новинки!</a></li>
                             <li><a href="/delivery">Доставка</a></li>
-                            <li><a href="contact.html">contact</a></li>
+
                         </#if>
                     </ul>
                     <ul class="navbar_user">

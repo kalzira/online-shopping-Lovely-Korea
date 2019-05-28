@@ -13,6 +13,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  *
  */
@@ -30,6 +32,13 @@ public class ProductServiceImpl implements ProductService {
         ProductInfo productInfo = productInfoRepository.findFirstByProductId(productId);
         return productInfo;
     }
+
+
+    @Override
+    public List<ProductInfo> findALlByProductName(String productName){
+        return productInfoRepository.findAllByProductName(productName);
+    }
+
 
     @Override
     public Page<ProductInfo> findUpAll(Pageable pageable) {

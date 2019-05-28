@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -151,5 +152,25 @@ public class ProductController {
             productService.delete(productId);
             return "redirect:" + "/";
     }
+
+    @GetMapping("/search")
+    public String findAllByProductName(Model model) {
+
+        model.addAttribute("product", new ProductInfo());
+
+        return "product/index";
+    }
+
+    @PostMapping("/search")
+    public String findAllByProductName(ProductInfo lecture, Model model, String productName) {
+
+        List<ProductInfo> products = productService.findALlByProductName(productName);
+        model.addAttribute("products", products);
+
+        return "product/index";
+    }
+
+
+
 
 }
