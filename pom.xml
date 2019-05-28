@@ -47,9 +47,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>postgresql</groupId>
-			<artifactId>postgresql-connector-java</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
