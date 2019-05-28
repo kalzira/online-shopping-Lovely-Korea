@@ -14,22 +14,22 @@ INSERT INTO "public"."order_main" VALUES (2147483648, '3200 West Road', 'custome
 -- ----------------------------
 -- Records of product_category
 -- ----------------------------
-INSERT INTO "public"."product_category" VALUES (1,	'Снятие макияжа',	0, '2018-03-14 00:26:05', '2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (2,	'Очищение',	1,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (3,	'Пиллинги, Скрабы',	2, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (4,	'Тонеры, Эмульсии, Сыворотки',	3, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (5,	'Маски для лица',	4,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (6, 'Крем для лица',	5,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (7, 'BB, CC крема',	6,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (8, 'Пудры',	7,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (9, 'Глаза',	8,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (1, 'Снятие макияжа',	0, '2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (2, 'Очищение',	1,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (3, 'Пиллинги, Скрабы',	2, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (4, 'Тонеры, Эмульсии, Сыворотки',	3, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (5, 'Маски для лица',	4,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (6, 'Крем для лица',	5,'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (7, 'BB, CC крема',	6,'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (8, 'Пудры',	7,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (9, 'Глаза',	8,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (10,	'Губы',	9, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (11,	'Продукты питания',	10,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (12,	'Уход за волосами',	11,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05'
-INSERT INTO "public"."product_category" VALUES (13,	'Хиты продаж!',	12,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (14,	'Новинки', 13,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (15,	'Товары для дома',	14,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (16,	'Гаджеты',	15, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (11,	'Продукты питания',	10,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (12,	'Уход за волосами',	11,	'2018-03-14 00:26:05', '2018-03-10 00:26:05'
+INSERT INTO "public"."product_category" VALUES (13,	'Хиты продаж!',	12,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (14,	'Новинки', 13,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (15,	'Товары для дома',	14,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (16,	'Гаджеты',	15, '2018-03-14 00:26:05', '2018-03-10 00:26:05');
 
 
 
