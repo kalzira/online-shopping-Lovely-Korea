@@ -12,6 +12,7 @@
 <#--<link rel="stylesheet" type="text/css" href="/styles/responsive.css">-->
 
 <#include "../partials/_header.ftl">
+<link rel="stylesheet" type="text/css" href="/styles/cards.css">
 
     <#include "../partials/_nav.ftl">
     <!-- Slider -->

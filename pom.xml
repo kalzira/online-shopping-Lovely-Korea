@@ -47,8 +47,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -79,10 +79,11 @@
 		</dependency>
 
 		<!--For Deploy on Heroku-->
-		<!--<dependency>-->
-			<!--<groupId>org.mysq</groupId>-->
-			<!--<artifactId>postgresql</artifactId>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
