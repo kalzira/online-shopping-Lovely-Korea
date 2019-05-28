@@ -1,10 +1,10 @@
 
-INSERT INTO order_main VALUES (2147483643, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:20.439', 100.00, 0, '2018-03-15 12:52:20.439');
-INSERT INTO order_main VALUES (2147483645, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:29.007', 4.00, 0, '2018-03-15 12:52:29.007');
-INSERT INTO order_main VALUES (2147483641, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:07.428', 180.00, 2, '2018-03-15 12:52:53.664');
-INSERT INTO order_main VALUES (2147483647, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:35.289', 2.00, 2, '2018-03-15 12:52:55.919');
-INSERT INTO order_main VALUES (2147483649, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:58:23.824', 150.00, 0, '2018-03-15 12:58:23.824');
-INSERT INTO order_main VALUES (2147483642, '3200 West Road', 'customer1@email.com', 'customer1', '123456789', '2018-03-15 13:01:21.135', 4.00, 2, '2018-03-15 13:02:09.023');
+INSERT INTO "public"."order_main" VALUES (2147483643, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:20.439', 100.00, 0, '2018-03-15 12:52:20.439');
+INSERT INTO "public"."order_main" VALUES (2147483645, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:29.007', 4.00, 0, '2018-03-15 12:52:29.007');
+INSERT INTO "public"."order_main" VALUES (2147483641, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:07.428', 180.00, 2, '2018-03-15 12:52:53.664');
+INSERT INTO "public"."order_main" VALUES (2147483647, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:52:35.289', 2.00, 2, '2018-03-15 12:52:55.919');
+INSERT INTO "public"."order_main" VALUES (2147483649, '3100 Western Road A', 'customer2@email.com', 'customer2', '2343456', '2018-03-15 12:58:23.824', 150.00, 0, '2018-03-15 12:58:23.824');
+INSERT INTO "public"."order_main" VALUES (2147483642, '3200 West Road', 'customer1@email.com', 'customer1', '123456789', '2018-03-15 13:01:21.135', 4.00, 2, '2018-03-15 13:02:09.023');
 INSERT INTO "public"."order_main" VALUES (2147483640, '3200 West Road', 'customer1@email.com', 'customer1', '123456789', '2018-03-15 13:01:16.271', 20.00, 2, '2018-03-15 13:02:52.067');
 INSERT INTO "public"."order_main" VALUES (2147483648, '3200 West Road', 'customer1@email.com', 'customer1', '123456789', '2018-03-15 13:01:06.943', 134.00, 1, '2018-03-15 13:02:56.498');
 
@@ -14,48 +14,58 @@ INSERT INTO "public"."order_main" VALUES (2147483648, '3200 West Road', 'custome
 -- ----------------------------
 -- Records of product_category
 -- ----------------------------
-INSERT INTO "public"."product_category" VALUES (2147483641, 'Books', 0, '2018-03-09 23:03:26', '2018-03-10 00:15:27');
-INSERT INTO "public"."product_category" VALUES (2147483642, 'Clothes', 2, '2018-03-10 00:15:02', '2018-03-10 00:15:21');
-INSERT INTO "public"."product_category" VALUES (2147483644, 'Drink', 3, '2018-03-10 01:01:09', '2018-03-10 01:01:09');
-INSERT INTO "public"."product_category" VALUES (2147483645, 'Food', 1, '2018-03-10 00:26:05', '2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (1,	'Снятие макияжа',	0, '2018-03-14 00:26:05'	,'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (2,	'Очищение',	1,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (3,	'Пиллинги, Скрабы',	2	,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (4,	'Тонеры, Эмульсии, Сыворотки',	3	,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (5,	'Маски для лица',	4,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (6	,'Крем для лица',	5	,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (7	,'BB, CC крема',	6	,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (8	,'Пудры',	7,	'2018-03-14 00:26:05'	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (9	,'Глаза',	8,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (10,	'Губы',	9,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (11,	'Продукты питания',	10,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (12,	'Уход за волосами',	11,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05'
+INSERT INTO "public"."product_category" VALUES (13,	'Хиты продаж!',	12,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (14,	'Новинки',13,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (15,	'Товары для дома',	14,	'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+INSERT INTO "public"."product_category" VALUES (16,	'Гаджеты',	15	,'2018-03-14 00:26:05',	'2018-03-10 00:26:05');
+
+
 
 
 -- ----------------------------
 -- Records of product_in_order
 -- ----------------------------
-INSERT INTO "public"."product_in_order" VALUES (2147483642, 0, 'Books for learning Java', 'https://images-na.ssl-images-amazon.com/images/I/41f6Rd6ZEPL._SX363_BO1,204,203,200_.jpg', 'B0001', 'Core Java', 30.00, 6, 2147483641);
-INSERT INTO "public"."product_in_order" VALUES (2147483644, 0, 'Learn Spring', 'https://images-na.ssl-images-amazon.com/images/I/51gHy16h5TL._SX397_BO1,204,203,200_.jpg', 'B0002', 'Spring In Action', 20.00, 5, 2147483643);
-INSERT INTO "public"."product_in_order" VALUES (2147483646, 1, 'Kids Party Food', 'http://asset1.marksandspencer.com/is/image/mands/MS_FD_F04C_00398503_NC_X_EC_0?$PDP_MAXI_ZOOM_NEW$', 'F0001', 'Chicken', 4.00, 1, 2147483645);
-INSERT INTO "public"."product_in_order" VALUES (2147483648, 3, 'Awesome', 'https://starbuckssecretmenu.net/wp-content/uploads/2017/06/Starbucks-Violet-Drink.jpg', 'D0002', 'Starbucks Violet Drink', 2.00, 1, 2147483647);
-INSERT INTO "public"."product_in_order" VALUES (2147483640, 1, 'Kids Party Food', 'http://asset1.marksandspencer.com/is/image/mands/MS_FD_F04C_00398503_NC_X_EC_0?$PDP_MAXI_ZOOM_NEW$', 'F0001', 'Chicken', 4.00, 1, 2147483649);
-INSERT INTO "public"."product_in_order" VALUES (2147483641, 2, 'Boys Clothes', 'https://d2ul0w83gls0j4.cloudfront.net/taxonomy/300/0102/20171024151632.jpg', 'C0002', 'Shirts', 13.00, 2, 2147483649);
-INSERT INTO "public"."product_in_order" VALUES (2147483632, 1, 'Family s', 'http://cdn1.thecomeback.com/wp-content/uploads/2017/05/mcdonalds_food-832x447.png', 'F0002', 'McDonald‘s Food', 20.00, 1, 2147483649);
-INSERT INTO "public"."product_in_order" VALUES (2147483643, 0, 'Books for learning Java', 'https://images-na.ssl-images-amazon.com/images/I/41f6Rd6ZEPL._SX363_BO1,204,203,200_.jpg', 'B0001', 'Core Java', 30.00, 3, 2147483648);
-INSERT INTO "public"."product_in_order" VALUES (2147483634, 2, 'Under Armour', 'https://assets.academy.com/mgen/33/20088533.jpg?is=500,500', 'C0001', 'T-shirt', 10.00, 1, 2147483649);
-INSERT INTO "public"."product_in_order" VALUES (2147483636, 0, 'Java SE', 'https://images-na.ssl-images-amazon.com/images/I/51S8VRHA2FL._SX357_BO1,204,203,200_.jpg', 'B0005', 'Thinking in Java', 30.00, 1, 2147483645);
-INSERT INTO "public"."product_in_order" VALUES (2147483647, 3, 'Awesome', 'https://starbuckssecretmenu.net/wp-content/uploads/2017/06/Starbucks-Violet-Drink.jpg', 'D0002', 'Starbucks Violet Drink', 2.00, 22, 2147483645);
-INSERT INTO "public"."product_in_order" VALUES (2147483638, 0, 'Java SE', 'https://www.pearsonhighered.com/assets/bigcovers/0/1/3/2/0132778041.jpg', 'B0004', 'Effective Java', 30.00, 1, 2147483645);
-INSERT INTO "public"."product_in_order" VALUES (2147483649, 0, 'Books for learning Java', 'https://images-na.ssl-images-amazon.com/images/I/41f6Rd6ZEPL._SX363_BO1,204,203,200_.jpg', 'B0001', 'Core Java', 30.00, 1, 2147483645);
-INSERT INTO "public"."product_in_order" VALUES (2147483631, 1, 'Family s', 'http://cdn1.thecomeback.com/wp-content/uploads/2017/05/mcdonalds_food-832x447.png', 'F0002', 'McDonald‘s Food', 20.00, 1, 2147483640);
-INSERT INTO "public"."product_in_order" VALUES (2147483633, 1, 'Kids Party Food', 'http://asset1.marksandspencer.com/is/image/mands/MS_FD_F04C_00398503_NC_X_EC_0?$PDP_MAXI_ZOOM_NEW$', 'F0001', 'Chicken', 4.00, 1, 2147483642);
+
+INSERT INTO "public"."product_in_order" VALUES ('001',	0	,'2019-05-27 21:31:56',
+                                                'Набор из миниаютюр очищающего крема Clean it Zero с текстурой сливочного щербета, эффективно очищающего загрязнения и стойкий макияж.',
+                                                'https://stylestory.com.au/wp-content/uploads/2018/09/Banila-Clean-It-Zero-Special-Kit-510x510.jpg',
+                                                'Очищающиe крема Banila Co. Clean it Zero'	,430.00,	0,	7	,'2019-05-26 18:18:13');
+INSERT INTO "public"."product_in_order" VALUES ('002', 3	,'2019-05-27 21:31:46',
+                                                'Данный высокоэффективный серум для лица содержит комплекс питательных веществ для эффективной борьбы с морщинами. ',	'https://hollyshop.ru/upload/iblock/13f/13f675bc6e566a59761126ae6eaa77ed.jpg',
+                                                'Серум Mizon Original Skin Energy Peptide 500',	1190.00,	0,	2	,'2019-05-27 21:31:46');
+INSERT INTO "public"."product_in_order" VALUES ('003'	,10,	'2019-05-27 21:33:26'	,'Острая лапша со вкусом курицы.',
+                                                'https://images-na.ssl-images-amazon.com/images/I/91Uv1Ze9ONL._SX466_.jpg',
+                                                'Buldak Ramen'	,50.00,	0	,10,	'2019-05-27 21:33:26');
+INSERT INTO "public"."product_in_order" VALUES ('004',	4	,'2019-05-27 21:34:56'	,
+                                                'Коллекция тканевых масок Real Nature Mask Sheet на основе натуральных цветов, растений и масел от производителя натуральной косметики Nature Republic'	,
+                                                'https://www.happy-berry.kiev.ua/wp-content/uploads/Nature-Republic-Real-Nature-Mask-Sheet-min.jpg',
+                                                'Тканевые маски для лица Nature Republic Real Nature Mask Sheet',	70.00,	1	,12	,'2019-05-27 21:34:56');
+INSERT INTO "public"."product_in_order" VALUES ('005'	,9,	'2019-05-27 21:37:04','Ceramidin Lipair — скорая помощь для Ваших нуждающихся в заботе губ.',
+                                                'https://cosmic.net.ua/uploads/shop/products/large/307acedf59479abf8b6952d493ae348e.jpg',
+                                                'Увлажняющий бальзам для губ с керамидами Dr.Jart+ Ceramidin Lipair',	510.00,	1	,5,	'2019-05-27 21:37:04');
+INSERT INTO "public"."product_in_order" VALUES ('006'	,6,'2019-05-27 21:39:09',	'ББ-крем Secret Key является основой для дневного и вечернего макияжа, который маскирует недостатки кожи и устраняет причину их появления.',
+                                                'https://irecommend.ru/sites/default/files/product-images/46815/Kaa3d2YhDCeTvtosJgiQ.jpg'	,
+                                                'ББ-крем для идеального лица Secret Key Cover Up Skin Perfecter',	420.00
+                                                	,1,	12,	'2019-05-27 21:39:09');
+INSERT INTO "public"."product_in_order" VALUES ('007',	2,	'2019-05-27 21:40:31',
+                                                'Средство удаляет все загрязнения с поверхности эпидермиса и из его глубоких слоев. Пилинг отшелушивает омертвевшие ткани, стимулирует микроциркуляцию, выводит шлаки и токсины.',
+                                                'https://images.shafastatic.net/41746539'	,'Пилинг-гель Elizavecca Hell-Pore Vitamin Bright Turn Peeling Gel',	550.00	,0	,10,	'2019-05-27 21:40:31');
 
 
 -- ----------------------------
 -- Records of product_info
--- ----------------------------
-INSERT INTO "public"."product_info" VALUES ('B0003', 0, '2018-03-10 10:37:39', 'Java EE', 'https://covers.oreillystatic.com/images/9780596516680/lrg.jpg', 'Head First', 10.00, 1, 200, '2018-03-10 19:42:02');
-INSERT INTO "public"."product_info" VALUES ('C0003', 2, '2018-03-10 12:12:46', 'Mans', 'https://img1.newchic.com/thumb/view/oaupload/newchic/images/00/30/df8a1f83-035c-4942-93d6-49933ac52a34.jpg', 'Coats', 22.00, 0, 222, '2018-03-10 12:12:46');
-INSERT INTO "public"."product_info" VALUES ('D0001', 3, '2018-03-10 06:51:03', 'Everyone likes it', 'https://www.thesun.co.uk/wp-content/uploads/2017/03/nintchdbpict000277254629.jpg?strip=all&w=676', 'Coca Cola', 1.00, 0, 100, '2018-03-10 12:04:13');
-INSERT INTO "public"."product_info" VALUES ('B0002', 0, '2018-03-10 10:35:43', 'Learn Spring', 'https://images-na.ssl-images-amazon.com/images/I/51gHy16h5TL._SX397_BO1,204,203,200_.jpg', 'Spring In Action', 20.00, 0, 195, '2018-03-10 10:35:43');
-INSERT INTO "public"."product_info" VALUES ('C0001', 2, '2018-03-10 12:09:41', 'Under Armour', 'https://assets.academy.com/mgen/33/20088533.jpg?is=500,500', 'T-shirt', 10.00, 0, 109, '2018-03-10 12:09:41');
-INSERT INTO "public"."product_info" VALUES ('C0002', 2, '2018-03-10 12:11:51', 'Boys Clothes', 'https://d2ul0w83gls0j4.cloudfront.net/taxonomy/300/0102/20171024151632.jpg', 'Shirts', 13.00, 0, 108, '2018-03-10 12:11:51');
-INSERT INTO "public"."product_info" VALUES ('B0001', 0, '2018-03-10 06:44:25', 'Books for learning Java', 'https://images-na.ssl-images-amazon.com/images/I/41f6Rd6ZEPL._SX363_BO1,204,203,200_.jpg', 'Core Java', 30.00, 0, 96, '2018-03-10 06:44:25');
-INSERT INTO "public"."product_info" VALUES ('B0004', 0, '2018-03-10 10:39:29', 'Java SE', 'https://www.pearsonhighered.com/assets/bigcovers/0/1/3/2/0132778041.jpg', 'Effective Java', 30.00, 0, 199, '2018-03-10 10:39:32');
-INSERT INTO "public"."product_info" VALUES ('B0005', 0, '2018-03-10 10:40:35', 'Java SE', 'https://images-na.ssl-images-amazon.com/images/I/51S8VRHA2FL._SX357_BO1,204,203,200_.jpg', 'Thinking in Java', 30.00, 0, 199, '2018-03-10 10:40:35');
-INSERT INTO "public"."product_info" VALUES ('D0002', 3, '2018-03-10 12:08:17', 'Awesome', 'https://starbuckssecretmenu.net/wp-content/uploads/2017/06/Starbucks-Violet-Drink.jpg', 'Starbucks Violet Drink', 2.00, 0, 200, '2018-03-10 12:08:17');
-INSERT INTO "public"."product_info" VALUES ('F0001', 1, '2018-03-10 12:15:05', 'Kids Party Food', 'http://asset1.marksandspencer.com/is/image/mands/MS_FD_F04C_00398503_NC_X_EC_0?$PDP_MAXI_ZOOM_NEW$', 'Chicken', 4.00, 0, 57, '2018-03-10 12:15:10');
-INSERT INTO "public"."product_info" VALUES ('F0002', 1, '2018-03-10 12:16:44', 'Family s', 'http://cdn1.thecomeback.com/wp-content/uploads/2017/05/mcdonalds_food-832x447.png', 'McDonald‘s Food', 20.00, 0, 22, '2018-03-10 12:16:44');
-
 
 -- ----------------------------
 -- Records of users
