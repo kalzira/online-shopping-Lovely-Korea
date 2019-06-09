@@ -25,7 +25,7 @@ INSERT INTO "public"."product_category" VALUES (8, 'Пудры',	7,	'2018-03-14 
 INSERT INTO "public"."product_category" VALUES (9, 'Глаза',	8,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (10,	'Губы',	9, '2018-03-14 00:26:05',	'2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (11,	'Продукты питания',	10,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
-INSERT INTO "public"."product_category" VALUES (12,	'Уход за волосами',	11,	'2018-03-14 00:26:05', '2018-03-10 00:26:05'
+INSERT INTO "public"."product_category" VALUES (12,	'Уход за волосами',	11,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (13,	'Хиты продаж!',	12,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (14,	'Новинки', 13,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
 INSERT INTO "public"."product_category" VALUES (15,	'Товары для дома',	14,	'2018-03-14 00:26:05', '2018-03-10 00:26:05');
@@ -38,9 +38,7 @@ INSERT INTO "public"."product_category" VALUES (16,	'Гаджеты',	15, '2018-
 -- Records of product_in_order
 -- ----------------------------
 
-INSERT INTO "public"."product_in_order" VALUES ('001',	0,'2019-05-27 21:31:56',
-                                                'Набор из миниаютюр очищающего крема Clean it Zero с текстурой сливочного щербета, эффективно очищающего загрязнения и стойкий макияж.',
-                                                'https://stylestory.com.au/wp-content/uploads/2018/09/Banila-Clean-It-Zero-Special-Kit-510x510.jpg',
+INSERT INTO "public"."product_in_order" VALUES ('001',	0,'2019-05-27 21:31:56', 'Набор из миниаютюр очищающего крема Clean it Zero с текстурой сливочного щербета, эффективно очищающего загрязнения и стойкий макияж.', 'https://stylestory.com.au/wp-content/uploads/2018/09/Banila-Clean-It-Zero-Special-Kit-510x510.jpg',
                                                 'Очищающиe крема Banila Co. Clean it Zero', 430.00,	0,	7,'2019-05-26 18:18:13');
 INSERT INTO "public"."product_in_order" VALUES ('002', 3,'2019-05-27 21:31:46',
                                                 'Данный высокоэффективный серум для лица содержит комплекс питательных веществ для эффективной борьбы с морщинами. ',	'https://hollyshop.ru/upload/iblock/13f/13f675bc6e566a59761126ae6eaa77ed.jpg',
