@@ -4,7 +4,7 @@
     <br>
     <hr>
     <div class="text-center">
-        <a style="color: inherit" href="https://github.com/zhulinn" ><i class="fab fa-github fa-3x"></i></a>
+        
     </div>
 
 
